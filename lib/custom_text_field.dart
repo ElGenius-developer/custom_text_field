@@ -56,7 +56,7 @@ class CustomTextFormFieldState extends State<CustomTextFormField> {
         //TODo: checking
         onChanged: (value) => changeValidateIcon(),
 
-        textAlign: TextAlign.right, //TODO:
+        textAlign: TextAlign.left, //TODO:
         controller: widget.controller,
         keyboardType: TextInputType.text,
         obscureText: isSecured && widget.isPassword ? true : false,
