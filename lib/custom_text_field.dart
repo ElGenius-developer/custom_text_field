@@ -38,10 +38,10 @@ class CustomTextFormField extends StatefulWidget {
       : super(key: key);
 
   @override
-  _CustomTextFormFieldState createState() => _CustomTextFormFieldState();
+  CustomTextFormFieldState createState() => CustomTextFormFieldState();
 }
 
-class _CustomTextFormFieldState extends State<CustomTextFormField> {
+class CustomTextFormFieldState extends State<CustomTextFormField> {
   bool isSecured = true;
   bool iconValidation = false;
   @override
