@@ -115,7 +115,8 @@ class CustomTextFormFieldState extends State<CustomTextFormField> {
     if (widget.hasValidate == false) {
       if (widget.controller.text.isEmpty) {
         iconValidation = false;
-      } else if (widget.controller.text.length >= 10) {
+      }
+      else if (widget.controller.text.length >= 10) {
         if (widget.keyBoardType == TextInputType.phone) {
           if (widget.controller.text.length == 11)
             iconValidation = true;
@@ -126,12 +127,13 @@ class CustomTextFormFieldState extends State<CustomTextFormField> {
             iconValidation = true;
           else
             iconValidation = false;
-        } 
+        }
         else {
           iconValidation = true;
         }
-      } else {
-        if (widget.hintText.toLowerCase() == 'price') {
+      } 
+      else {
+        if (widget.hintText.toLowerCase() == 'price' || widget.hintText.toLowerCase() =='bathrooms' || widget.hintText.toLowerCase() =='bedrooms') {
           widget.controller.text.isNotEmpty
               ? iconValidation = true
               : iconValidation = false;
