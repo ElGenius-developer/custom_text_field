@@ -121,7 +121,13 @@ class CustomTextFormFieldState extends State<CustomTextFormField> {
             iconValidation = true;
           else
             iconValidation = false;
-        } else {
+        }else  if (widget.keyBoardType == TextInputType.number) {
+          if (widget.controller.text.isNotEmpty)
+            iconValidation = true;
+          else
+            iconValidation = false;
+        } 
+        else {
           iconValidation = true;
         }
       } else {
