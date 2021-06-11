@@ -58,7 +58,7 @@ class CustomTextFormFieldState extends State<CustomTextFormField> {
 
         textAlign: TextAlign.left, //TODO:
         controller: widget.controller,
-        keyboardType: TextInputType.text,
+       keyboardType: widget.keyBoardType??TextInputType.text,
         obscureText: isSecured && widget.isPassword ? true : false,
         style: TextStyle(
           color: widget.textColor ?? Theme.of(context).scaffoldBackgroundColor,
